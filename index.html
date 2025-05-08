@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium agriculture services, farming solutions, and organic products. We help farmers grow better crops with sustainable practices.">
+    <meta name="keywords" content="agriculture, farming, organic, crops, harvest, farming equipment">
+    <title>AgriGrowth - Premium Agriculture Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="date-time" id="date-time"></div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Logo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="AgriGrowth Logo">
+                <h1>Agri<span>Growth</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Carousel -->
+    <section class="banner">
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/banner1.jpg" alt="Farm Field">
+                        <div class="carousel-caption">
+                            <h2>Modern Agriculture Solutions</h2>
+                            <p>Helping farmers grow better crops with sustainable practices</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/banner2.jpg" alt="Organic Farming">
+                        <div class="carousel-caption">
+                            <h2>Organic Farming</h2>
+                            <p>100% natural solutions for your farm</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/banner3.jpg" alt="Modern Equipment">
+                        <div class="carousel-caption">
+                            <h2>Modern Equipment</h2>
+                            <p>Latest technology for maximum yield</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Space -->
+    <section class="ad-space">
+        <div class="container">
+            <!-- Google AdSense Code - Replace with your Ad Unit ID -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
+            <!-- HomePageTop -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </section>
+
+    <!-- Featured Items -->
+    <section class="featured-items">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="items-grid">
+                <div class="item">
+                    <img src="./images/OrganicFertilizers.jpg" alt="Organic Fertilizers">
+                    <h3>Organic Fertilizers</h3>
+                    <p>Natural fertilizers that improve soil health and crop yield without harmful chemicals.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="item">
+                    <img src="./images/IrrigationSystems.png" alt="Irrigation Systems">
+                    <h3>Irrigation Systems</h3>
+                    <p>Efficient water management solutions for all types of farms and crops.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="item">
+                    <img src="./images/CropProtection.jpg" alt="Crop Protection">
+                    <h3>Crop Protection</h3>
+                    <p>Effective solutions to protect your crops from pests and diseases.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="item">
+                    <img src="./images/FarmEquipment.jpg" alt="Farm Equipment">
+                    <h3>Farm Equipment</h3>
+                    <p>High-quality tools and machinery to make farming more efficient.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Feedback -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="quote">"AgriGrowth transformed our farm with their organic solutions. Our yield increased by 40%!"</div>
+                    <div class="author">
+                        <img src="./images/customer1.jpg" alt="John Farmer">
+                        <div class="author-info">
+                            <h4>John Farmer</h4>
+                            <p>Wheat Grower</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"The irrigation system they installed saved us thousands in water costs. Highly recommended!"</div>
+                    <div class="author">
+                        <img src="./images/customer2.jpg" alt="Sarah Agricola">
+                        <div class="author-info">
+                            <h4>Sarah Agricola</h4>
+                            <p>Vineyard Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"Excellent customer service and top-quality products. Our farm has never been better."</div>
+                    <div class="author">
+                        <img src="./images/customer3.jpg" alt="Mike Grower">
+                        <div class="author-info">
+                            <h4>Mike Grower</h4>
+                            <p>Organic Vegetable Farm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./images/gallery1.jpg" alt="Farm Field">
+                    <div class="overlay">
+                        <h3>Organic Farm</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/gallery2.jpg" alt="Harvest">
+                    <div class="overlay">
+                        <h3>Harvest Season</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/gallery3.jpg" alt="Irrigation">
+                    <div class="overlay">
+                        <h3>Modern Irrigation</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/gallery4.jpg" alt="Tractor">
+                    <div class="overlay">
+                        <h3>Farm Equipment</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/gallery5.jpg" alt="Vegetables">
+                    <div class="overlay">
+                        <h3>Fresh Produce</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/gallery6.jpg" alt="Farmers">
+                    <div class="overlay">
+                        <h3>Our Team</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agriculture Items List -->
+    <section class="agriculture-list">
+        <div class="container">
+            <h2 class="section-title">Our Agriculture Products</h2>
+            <ul class="agri-items">
+                <li><i class="fas fa-seedling"></i> Organic Seeds</li>
+                <li><i class="fas fa-tractor"></i> Farm Machinery</li>
+                <li><i class="fas fa-spray-can"></i> Pest Control</li>
+                <li><i class="fas fa-water"></i> Irrigation Systems</li>
+                <li><i class="fas fa-leaf"></i> Fertilizers</li>
+                <li><i class="fas fa-boxes"></i> Storage Solutions</li>
+                <li><i class="fas fa-tools"></i> Farming Tools</li>
+                <li><i class="fas fa-book"></i> Consulting Services</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About AgriGrowth</h3>
+                    <p>We are committed to providing sustainable agriculture solutions that help farmers increase yield while protecting the environment.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Farm Road, Agriculture City, AG 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+                        <li><i class="fas fa-envelope"></i> info@agrigrowth.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for farming tips and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="copyright-year"></span> AgriGrowth. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
